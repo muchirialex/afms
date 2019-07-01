@@ -34,7 +34,7 @@
               </a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="{{ url('/work') }}">
+                <a class="nav-link" href="{{ url('/vehicles/create-step1') }}">
                   <i class="material-icons">content_paste</i>
                   <p>Add Fleet</p>
                 </a>

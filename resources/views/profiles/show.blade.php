@@ -131,7 +131,7 @@
             <div class="col-md-8">
               <div class="card">
                 <div class="card-header card-header-primary">
-                  <h4 class="card-title">Tasks completed: <strong style="font-size:1.25em;">{{ ceil($tasksCompleted / 10) }}</strong></h4>
+                  <h4 class="card-title">Tasks completed: <strong style="font-size:1.25em;">#</strong></h4>
                   <p class="card-category">Make sure your profile is up-to-date</p>
                   <div class="add-div-btn">
                     <a href="{{$user->id}}/editUser" class="add-user-btn">
