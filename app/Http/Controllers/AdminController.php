@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Excel;
 use File;
 use App\User;
+use App\Vehicle;
 
 class AdminController extends Controller
 {
@@ -130,6 +131,13 @@ class AdminController extends Controller
         User::find($id)->where('id', $id)->delete();
 
         return redirect('admin')->with('success', 'User successfully deleted');
+    }
+
+    public function vdestroy($id)
+    {
+        Vehicle::find($id)->where('id', $id)->delete();
+
+        return redirect('vehicles')->with('success', 'Fleet successfully deleted');
     }
 
     public function exportUsers($type)

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="x-apple-disable-message-reformatting">
-    <title>Welcome To PhotoChamp, the snapshot place!</title>
+    <title>Welcome To AFMS, the best fleet management place!</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
 
     <!-- Web Font / @font-face : BEGIN -->
@@ -256,11 +256,11 @@
                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                         <tr>
                             <td style="padding: 20px; font-family: 'Raleway', sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
-                                <h1 style="margin: 0 0 10px; font-size: 25px; line-height: 30px; color: #333333; font-weight: bold;">PhotoChamp account details</h1>
+                                <h1 style="margin: 0 0 10px; font-size: 25px; line-height: 30px; color: #333333; font-weight: bold;">AFMS account details</h1>
                                 <br>
                                 <p style="margin: 0 0 10px;">Hi {{ $user['name'] }}, <br><br>
 
-                                    Please click the button below to login to your new PhotoChamp account.
+                                    Please click the button below to login to your new AFMS service account.
                                     <br><br>
                                     Here are your login details:
                                     <ul style="padding: 0; margin: 0; list-style-type: disc;">
@@ -270,11 +270,11 @@
                                     <br>
                                     You need to <strong>CHANGE YOUR PASSWORD</strong> once you're logged in.
                                     <br><br>
-                                    If the account is not updated within 21 days, then all details will be deleted and you will not be contacted by PhotoChamp.
+                                    If the account is not updated within 21 days, then all details will be deleted and you will not be contacted by AFMS.
                                     <br><br>
                                     Regards,
                                     <br><br>
-                                    PhotoChamp Support</p>
+                                    AFMS Support</p>
                             </td>
                         </tr>
                         <tr>
@@ -283,7 +283,7 @@
                                 <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
                                     <tr>
                                         <td class="button-td button-td-primary" style="border-radius: 4px; background: #222222;">
-											<a class="button-a button-a-primary" href="https://muchirialex.me/photochamp" style="background: #222222; border: 1px solid #000000; font-family: 'Raleway', sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;">Login to PhotoChamp</a>
+											<a class="button-a button-a-primary" href="#" style="background: #222222; border: 1px solid #000000; font-family: 'Raleway', sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;">Login to AFMS services</a>
 										</td>
                                     </tr>
                                 </table>
@@ -300,11 +300,11 @@
         <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: 0 auto;" class="email-container">
 	        <tr>
 	            <td style="padding: 20px; font-family: 'Raleway', sans-serif; font-size: 12px; line-height: 15px; text-align: center; color: #888888;">
-                    &copy; PhotoChamp 2018  &nbsp; | &nbsp; Terms and Conditions &nbsp; | &nbsp; Privacy Policy
+                    &copy; AFMS 2019  &nbsp; | &nbsp; Terms and Conditions &nbsp; | &nbsp; Privacy Policy
                     <br><br>
-	                The email was sent by: PhotoChamp<br><span class="unstyle-auto-detected-links">72995-00200 Nairobi, Kenya</span>
+	                The email was sent by: AFMS<br><span class="unstyle-auto-detected-links">72995-00200 Nairobi, Kenya</span>
 	                <br>
-	                <unsubscribe style="color: #888888; text-decoration: italic;">info@photochamp.io</unsubscribe>
+	                <unsubscribe style="color: #888888; text-decoration: italic;">info@afms.co.ke</unsubscribe>
 	            </td>
 	        </tr>
 	    </table>

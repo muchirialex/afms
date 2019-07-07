@@ -57,7 +57,7 @@ Route::get('downloadExcel/{type}', 'TasksController@downloadExcel');
 
 Route::delete('user/{id}/delete', ['middleware' => ['is_admin'], 'uses' => 'AdminController@destroy']);
 
-Route::delete('vehicle/{id}/delete', ['middleware' => ['is_admin'], 'uses' => 'AdminController@destroy']);
+Route::delete('vehicle/{id}/delete', ['middleware' => ['is_admin'], 'uses' => 'AdminController@vdestroy']);
 
 Route::get('exportUsers/{type}', 'AdminController@exportUsers');
 

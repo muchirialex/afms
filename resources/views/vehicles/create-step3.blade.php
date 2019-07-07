@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
   <link href="/css/dashboard.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 
@@ -238,8 +239,8 @@
 										</span>
 									</div>
 									<div class="form-group select-category">
-										<label for="exampleInput1" class="bmd-label-floating">Issue date</label>
-										<input class="form-control" type="date" name="issue_date" autocomplete="off">
+										<label for="exampleInput1" class="bmd-label-static">Issue date</label>
+										<input class="form-control" type="date" id="issue_date" name="issue_date" autocomplete="off">
 									</div>
 								</div>
 
@@ -250,8 +251,8 @@
 										</span>
 									</div>
 									<div class="form-group select-category">
-										<label for="exampleInput1" class="bmd-label-floating">Validity</label>
-										<input class="form-control" type="number" name="validity" autocomplete="off">
+										<label for="exampleInput1" class="bmd-label-floating">Validity period (Months)</label>
+										<input class="form-control" id="validity" name="validity" autocomplete="off" min="1" max="60">
 									</div>
 								</div>
 
@@ -262,8 +263,8 @@
 										</span>
 									</div>
 									<div class="form-group select-category">
-										<label for="exampleInput1" class="bmd-label-floating">Expiry date</label>
-										<input class="form-control" type="date" name="expiry_date" autocomplete="off">
+										<label for="exampleInput1" class="bmd-label-static">Expiry date</label>
+										<input class="form-control" id="expiry_date" name="expiry_date" autocomplete="off">
 									</div>
 								</div>
 							</div>  
@@ -311,6 +312,16 @@
         $(".alert-success").slideUp(500);
     });
   </script>
+
+  <script>
+    $('#validity').change(function(){
+      let dt = new Date($('#issue_date').val());
+      dt.setMonth( dt.getMonth() + parseInt($(this).val()));
+      let output = dt.getDate()+'/'+(dt.getMonth()+1)+'/'+dt.getFullYear()
+      $('#expiry_date').val(output);
+    })
+  </script>
+  
   <script src="/js/dashboard/core/jquery.min.js" type="text/javascript"></script>
   <script src="/js/dashboard/core/popper.min.js" type="text/javascript"></script>
   <script src="/js/dashboard/core/bootstrap-material-design.min.js" type="text/javascript"></script>
