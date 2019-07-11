@@ -128,7 +128,7 @@
                     <i class="fa fa-cogs"></i>
                   </div>
                   <p class="card-category">Fleet Count</p>
-                  <h3 class="card-title">#</h3>
+                  <h3 class="card-title">{{ $fleet_vehicles }}</h3>
                 </div>
                 <div class="card-footer">
                   <div class="stats">
@@ -143,7 +143,7 @@
                   <div class="card-icon">
                     <i class="material-icons">people</i>
                   </div>
-                  <p class="card-category">All workers</p>
+                  <p class="card-category">All installers</p>
                   <h3 class="card-title">{{ $workers }}
                   </h3>
                 </div>
@@ -161,7 +161,7 @@
                     <i class="fa fa-users"></i>
                   </div>
                   <p class="card-category">All managers</p>
-                <h3 class="card-title">{{ $inactiveUsers }}</h3>
+                <h3 class="card-title">{{ $managers }}</h3>
                 </div>
                 <div class="card-footer">
                   <div class="stats">
@@ -177,7 +177,7 @@
                     <i class="material-icons">assignment_ind</i>
                   </div>
                   <p class="card-category">Administrators</p>
-                <h3 class="card-title">{{ $activeUsers }}</h3>
+                <h3 class="card-title">{{ $admins }}</h3>
                 </div>
                 <div class="card-footer">
                   <div class="stats">
@@ -194,9 +194,9 @@
                   <div class="ct-chart" id="websiteViewsChart"></div>
                 </div>
                 <div class="card-body">
-                  <h4 class="card-title">Tasks Completed</h4>
+                  <h4 class="card-title">New gadgets on vehicles</h4>
                   <p class="card-category">
-                    <span class="text-success"><i class="fa fa-check-square"></i> # </span> tasks in this week's output.
+                    <span class="text-success"><i class="fa fa-check-square"></i> {{ $gadgets }} </span> new gadgets installed.
                   </p>
                 </div>
                 <div class="card-footer">
@@ -212,9 +212,9 @@
                   <div class="ct-chart" id="dailySalesChart"></div>
                 </div>
                 <div class="card-body">
-                  <h4 class="card-title">Tasks in Queue</h4>
+                  <h4 class="card-title">Transferred gadgets</h4>
                   <p class="card-category">
-                    <span class="text-info"><i class="fa fa-cogs"></i> # </span> fleet waiting to be processed.
+                    <span class="text-info"><i class="fa fa-cogs"></i> {{ $transferred }} </span> fleet with transferred gadgets.
                   </p>
                 </div>
                 <div class="card-footer">
@@ -230,9 +230,9 @@
                   <div class="ct-chart" id="completedTasksChart"></div>
                 </div>
                 <div class="card-body">
-                  <h4 class="card-title">Tasks Not Processing</h4>
+                  <h4 class="card-title">FLeet not processing</h4>
                   <p class="card-category">
-                    <span class="text-danger"><i class="fa fa-bomb"></i> # </span> tasks in the system.
+                    <span class="text-danger"><i class="fa fa-bomb"></i> # </span> fleet in the system not processed.
                   </p>
                 </div>
                 <div class="card-footer">

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Auth;
 use App\Vehicle;
 
 class VehicleController extends Controller
@@ -22,8 +23,14 @@ class VehicleController extends Controller
     
     public function createStep1(Request $request)
     {
-        $vehicle = $request->session()->get('vehicle');
-        return view('vehicles.create-step1',compact('vehicle', $vehicle));
+        if (Auth::User()->type != 'manager') 
+        {
+            $vehicle = $request->session()->get('vehicle');
+            return view('vehicles.create-step1',compact('vehicle', $vehicle));
+        }
+        else {
+            return redirect('/vehicles');
+        }
     }
 
 

@@ -154,13 +154,13 @@ class AdminController extends Controller
     public function stats()
 	{
         $workers = User::where('type','=','worker')->count();
-        //$tasks = Work::where('image_url','!=','')->count();
-        $inactiveUsers = User::where('status','!=','1')->count();
+        $fleet_vehicles = Vehicle::where('id','!=','')->count();
+        $managers = User::where('type','=','manager')->count();
+        $admins = User::where('type','=','admin')->count();
         $activeUsers = User::where('status','!=','0')->where('type','=','worker')->count();
-        //$tasksCompleted = Work::where('bib','!=','')->count();
-        //$queueTasks = Work::where('bib','=','')->count();
-        //$systemTasks = Work::where('bib','=','')->count();
+        $gadgets = Vehicle::where('condition','!=','0')->count();
+        $transferred = Vehicle::where('condition','==', '0')->count();
         
-        return view('dashboard', compact('workers','tasks', 'inactiveUsers', 'activeUsers', 'tasksCompleted', 'queueTasks', 'systemTasks'));
+        return view('dashboard', compact('workers','fleet_vehicles', 'managers', 'admins', 'gadgets', 'transferred'));
 	}
 }
